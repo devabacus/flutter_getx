@@ -39,11 +39,11 @@ class ControllerX extends GetxController {
 
     /// Anti DDos - Called every time the user stops typing for 1 second, for example.
     debounce(count1, (_) => print("debouce$_ (debounce)"),
-        time: Duration(seconds: 1));
+        time: Duration(seconds: 3));
 
     /// Ignore all changes within 1 second.
     interval(count1, (_) => print("interval $_ (interval)"),
-        time: Duration(seconds: 1));
+        time: Duration(seconds: 3));
   }
 
   int get sum => count1.value + count2.value;

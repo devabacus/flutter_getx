@@ -28,7 +28,7 @@ void main() {
       // GetPage with default transitions
       GetPage(
         name: '/third',
-        transition: Transition.cupertino,
+        transition: Transition.leftToRight,
         page: () => Third(),
       ),
     ],
